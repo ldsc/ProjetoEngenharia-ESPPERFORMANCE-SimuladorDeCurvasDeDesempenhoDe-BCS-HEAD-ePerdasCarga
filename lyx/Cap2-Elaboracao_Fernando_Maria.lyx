@@ -1,0 +1,747 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Elaboração}  
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Elaboração
+\begin_inset Index idx
+status collapsed
+
+\begin_layout Plain Layout
+Elaboração
+\end_layout
+
+\end_inset
+
+
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Elaboração"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Definida a especificação do software e montados os diagramas de caso de
+ uso, faz-se necessário agora desenvolver a elaboração do software.
+ Definiremos as áreas de atuação e conceitos teóricos que envolvem a problemátic
+a, construiremos então, o diagrama de pacotes relacionando os assuntos.
+\end_layout
+
+\begin_layout Section
+Análise de domínio
+\end_layout
+
+\begin_layout Standard
+Para uma melhor compreensão deste trabalho partiremos do pressuposto que
+ o usuário possui conhecimentos básicos a cerca das áreas apresentadas.
+\end_layout
+
+\begin_layout Standard
+Com o objetivo de entender o domínio e a abrangência do sistema em desenvolvimen
+to, apresenta-se aqui a análise do domínio.
+ Pensando de forma mais genérica identificamos os conceitos fundamentais
+ que envolvem o sistema.
+ Considerando que o objetivo principal do software é realizar o cálculo
+ da altura de elevação da bomba centrífuga submersa, temos relacionamento
+ entre ás áreas: 
+\end_layout
+
+\begin_layout Itemize
+Mecânica dos Fluidos, envolvendo as propredades do fluido, no caso a proprieadad
+e relacionada ao sistema é a densidade do fluido; 
+\end_layout
+
+\begin_layout Itemize
+Elevação e Escoamento de Petróleo, envolvendo conceitos sobre a utilização
+ da BCS, suas propriedades (rotação da bomba) e as perdas de carga envolvidas
+ na utilização; 
+\end_layout
+
+\begin_layout Section
+Formulação teórica
+\end_layout
+
+\begin_layout Standard
+\align block
+Para estimar as alturas de elevação e as perdas de carga no estágio da bomba
+ utiliza-se as combinações de parametrizações pesquisadas na literatura,
+ com maior precisão em relação aos dados experimentais de Amaral(2007).
+ A altura de elevação do estágio da bomba é dada por:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Formula 
+\begin{equation}
+H=H_{teo}-h_{atr}-h_{cho}-h_{rec}-h_{dif}-h_{dis}\label{eq:1}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+onde 
+\begin_inset Formula $H_{teo}$
+\end_inset
+
+
+\begin_inset Formula $[m]$
+\end_inset
+
+ é a altura de elevação teórica da bomba, 
+\begin_inset Formula $h_{atr}$
+\end_inset
+
+
+\begin_inset Formula $[m]$
+\end_inset
+
+ é a perda de carga por atritos no rotor da bomba, 
+\begin_inset Formula $h_{cho}$
+\end_inset
+
+
+\begin_inset Formula $[m]$
+\end_inset
+
+ é a perda de carga por choques no rotor, 
+\begin_inset Formula $h_{rec}[m]$
+\end_inset
+
+ é a perda de carga por recirculações no rotor, 
+\begin_inset Formula $h_{dif}$
+\end_inset
+
+ 
+\begin_inset Formula $[m]$
+\end_inset
+
+ é a perda de carga por atritos no difusor da bomba, e 
+\begin_inset Formula $h_{dis}$
+\end_inset
+
+
+\begin_inset Formula $[m]$
+\end_inset
+
+ é a perda de carga por atrito de disco da bomba, essas perdas são ilustradas
+ em estágio de BCS na Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:3.1"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/esquema.jpg
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:3.1"
+
+\end_inset
+
+Estágio da bomba centrífuga de fluxo misto com indicações das perdas de
+ carga [Amaral(2007)]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align block
+A seguir a definição física de cada um dos termos da equação da altura de
+ elevação da bomba: 
+\end_layout
+
+\begin_layout Itemize
+\align block
+
+\series bold
+\shape italic
+Head
+\shape default
+ teórico
+\series default
+: Altura de elevação ideal ou téorica de uma bomba centrífuga sem considerar
+ quaisquer perdas de carga no escoamento, formulação desenvolvida por Pfleiderer
+ (1972) 
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "PFLEIDERER"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+H_{teo}=C_{a}\left[\frac{U_{2}^{2}-U_{1}^{2}}{g}-\frac{ωQ}{2πg}\left(\frac{1}{b_{2}tgβ_{2}}-\frac{1}{b_{1}tgβ_{1}}\right)\right]
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $H_{teo}$
+\end_inset
+
+ é a altura de elevação teórica 
+\begin_inset Formula $[m]$
+\end_inset
+
+, 
+\begin_inset Formula $C_{a}$
+\end_inset
+
+ é o coeficiente de aletas, 
+\begin_inset Formula $U$
+\end_inset
+
+ é a velocidade periférica 
+\begin_inset Formula $[m/s]$
+\end_inset
+
+, 
+\begin_inset Formula $ω$
+\end_inset
+
+ é a velocidade rotacional 
+\begin_inset Formula $[rpm]$
+\end_inset
+
+, 
+\begin_inset Formula $Q$
+\end_inset
+
+ é a vazão 
+\begin_inset Formula $[m/s],$
+\end_inset
+
+ 
+\begin_inset Formula $b$
+\end_inset
+
+ é a altura do canal do rotor 
+\begin_inset Formula $[m],$
+\end_inset
+
+ 
+\begin_inset Formula $β$
+\end_inset
+
+ é o ângulo entre velocidade absoluta e direção tangencial das aletas 
+\begin_inset Formula $[graus]$
+\end_inset
+
+ e os subescritos 1 e 2 se referam a entrea e saída respectivamente, 
+\end_layout
+
+\begin_layout Itemize
+\align block
+
+\series bold
+Perda de carga por atrito no rotor: 
+\series default
+Definida como a perda linear causada nos limites das paredes no canal de
+ passagem do fluido e sob os efeitos de viscosidade do fluido que considera
+ o efeito da curvatura, efheito da forma retangular e efeito da rotação
+ do mesmo, formulação desenvolvida por Sun (2002) 
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "SUN-2002"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+h_{atr}=\frac{f_{r\beta\omega}Q^{2}}{8gD_{H}\pi^{2}b_{m}^{2}sen^{2}\beta_{h}cos\gamma}\frac{r_{2}-r_{1}}{r_{2}r_{1}}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $f_{r\beta\omega}$
+\end_inset
+
+ é o fator de atrito para canal curvo, retangular e rotativo, 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ é o ângulo entre aleta e plano horizontal 
+\begin_inset Formula $[graus],$
+\end_inset
+
+ 
+\begin_inset Formula $D_{H}$
+\end_inset
+
+ é o diâmetro hidráulico 
+\begin_inset Formula $[m],$
+\end_inset
+
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ é o raio do canal do rotor 
+\begin_inset Formula $[m]$
+\end_inset
+
+ e 
+\begin_inset Formula $\beta_{h}$
+\end_inset
+
+ é a projeção do ângulo da aleta no plano horizontal.
+ 
+\end_layout
+
+\begin_layout Itemize
+\align block
+
+\series bold
+Perda de carga por choques: 
+\series default
+Sua ocorrência está relacionada a vazões fora da condição de máxima eficiência.
+ Ocorre na entrada do rotor quando a vazão volumétrica descarregada pela
+ bomba é diferente da vazão com componente velocidade tangente à aleta do
+ rotor, formulação desenvolvida por Stepanoff (1959) 
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "STEPANOFF"
+
+\end_inset
+
+:
+\begin_inset Formula 
+\begin{equation}
+h_{cho}=k_{cho}\left(Q-Q_{BEP}\right)^{2}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $k_{cho}$
+\end_inset
+
+ é a constante empírica para perdas de carga por choques e 
+\begin_inset Formula $Q_{BEP}$
+\end_inset
+
+ é a vazão no ponto de melhor eficiência 
+\begin_inset Formula $[m/s].$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\align block
+
+\series bold
+Perda de carga por recirculação:
+\series default
+ Uma perda volumétrica, ou seja, é a energia dissipada pela recirculação
+ do fluido entre as regiões de entrada e saída do estágio devido às folgas
+ naturais existentes entre os componentes internos da bomba.
+ Por ser muito pequena é negligenciada pelas principais referências presentes
+ na literatura, e aqui também será, a partir do modelo de Gullich (1999)
+ e Amaral (2007): 
+\begin_inset Formula 
+\begin{equation}
+h_{rec}\approx0
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\align block
+
+\series bold
+Perda de carga por atrito no difusor:
+\series default
+ Perda hidráulica na entrada do difusor, que ocorre basicamente devido às
+ perdas por atrito e às perdas geradas pela mudança de escoamento devido
+ à não uniformidade da velocidade, formulação desenvolvida por Ito (1959)
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "ITO"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+h_{dif}=-\frac{(F_{r}F_{\beta}f)Q^{2}}{8gD_{H}\pi^{2}b_{m}^{2}sen^{3}\beta_{m}}\frac{(r_{3dif}-r_{2dif})}{(r_{3dif}r_{2dif})}
+\end{equation}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+onde 
+\begin_inset Formula $F_{r}$
+\end_inset
+
+ é o fator de correção do fator de atrito para canal retangular, 
+\begin_inset Formula $F_{\beta}$
+\end_inset
+
+é o fator de correção do fator de atrito para canal curvo, 
+\begin_inset Formula $\beta_{m}$
+\end_inset
+
+ é ângulo médio do escoamento entre entrada e saida do rotor 
+\begin_inset Formula $[graus],$
+\end_inset
+
+
+\begin_inset Formula $b_{m}$
+\end_inset
+
+ é altura média do canal do difusor 
+\begin_inset Formula $[m],$
+\end_inset
+
+ e 
+\begin_inset Formula $r_{dif}$
+\end_inset
+
+ é o raio do canal do difusor 
+\begin_inset Formula $[m]$
+\end_inset
+
+ e os subescritos 2 e 3 se referam a entrada e saída respectivamente.
+ 
+\end_layout
+
+\begin_layout Itemize
+\align block
+
+\series bold
+Perda de carga por atrito de disco:
+\series default
+ Energia dissipada externamente ao rotor, possivelmente a superposição de
+ atritos com efeitos de irreversibilidade em mudanças de direção e velocidade
+ no escoamento entre a saída do rotor e a entrada do difusor, formulação
+ desenvolvida por Thin (2008) 
+\begin_inset CommandInset citation
+LatexCommand nocite
+key "THIN"
+
+\end_inset
+
+: 
+\begin_inset Formula 
+\begin{equation}
+h_{dis}=\frac{f_{dis}\rho\omega^{3}\left(r_{2}\right)^{5}}{10^{9}Q}
+\end{equation}
+
+\end_inset
+
+onde 
+\begin_inset Formula $f_{dis}$
+\end_inset
+
+ é o coeficiente de perda por atrito de disco e 
+\begin_inset Formula $\rho$
+\end_inset
+
+é a massa específica do fluido 
+\begin_inset Formula $[kg/m\text{³]}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\align block
+É possível encontrar maiores detalhes sobre estudos de bombas centrífugas
+ submersas, que envolvam características gerais, desempenho e perdas de
+ carga nos livros de Gullich (2008), Tacacks (2009) e nas dissertações de
+ Amaral (2007) e Vieira (2014).
+\end_layout
+
+\begin_layout Section
+Identificação de pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+Apresentada a conceituação teórica, segue agora a identificação dos pacotes,
+ que são por definição um agrupamento genérico de classes que fazem parte
+ de um assunto e relacionam-se por um conceito comum.
+ Um assunto é aquilo que é tratado ou abordado em uma discussão, em um estudo
+ e é utilizado para orientar o leitor em um modelo amplo e complexo.
+\end_layout
+
+\begin_layout Standard
+• Propriedade do fluido: Pacote contendo parâmetros que caracterizam o fluido,
+ entre esses parâmetros está o valor de viscosidade informado pelo usuário
+ do sistema.
+ Essas características do fluido serão utilizadas no cálculo das perdas
+ de carga devido a circulação de fluido na bomba.
+\end_layout
+
+\begin_layout Standard
+• Propriedades da bomba: Pacote de parâmetros envolvendo a bomba centrífuga
+ submersa, entres esses parâmetros está o valor da rotação da bomba escolhida
+ pelo usuário.
+ Esses dados serão utilizados para o cálculo das perdas de carga da bomba.
+ 
+\end_layout
+
+\begin_layout Standard
+• Perdas de carga: É a perda de energia devido ao atrito provocado pela
+ passagem de fluido.
+ Utilizando os valores de bibliografia e dados fornecidos pelo usuário,
+ os cálculos serão realizados; 
+\end_layout
+
+\begin_layout Standard
+• Altura de elevação do BCS: Cálculo objetivo do simulador.
+ Utilizando as propriedades do fluido e da bomba, em segundo plano, calculará
+ o head teórico da bomba, bem como as perdas de carga, para então calcular
+ a Altura de Elevação do BCS.
+ 
+\end_layout
+
+\begin_layout Standard
+• Gráficos resultados: Um software externo (
+\family typewriter
+gnuplot
+\family default
+) irá gerar os gráficos a partir dos cálculos realizados pelo simulador.
+\end_layout
+
+\begin_layout Standard
+• Simulador: Fará a ligação entre os demais pacotes e gerará os resultados
+ de forma gráfica.
+\end_layout
+
+\begin_layout Section
+Diagrama de pacotes – assuntos
+\end_layout
+
+\begin_layout Standard
+O diagrama de pacotes, Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+, mostra as dependências entre as diversas partes do sistema.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Diagrama_Pacote.png
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Diagrama de Pacotes
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Diagrama-de-Pacotes"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

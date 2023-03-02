@@ -1,0 +1,3 @@
+viscosidade (cP)    Fator perda por choque 
+1                   20000
+270                 10000

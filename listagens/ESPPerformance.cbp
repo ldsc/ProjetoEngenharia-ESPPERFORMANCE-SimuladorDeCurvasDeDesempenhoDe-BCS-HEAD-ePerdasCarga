@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="ESPPerformance" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="default">
+				<Option output="ESPPerformance" prefix_auto="1" extension_auto="1" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+		</Build>
+		<Unit filename="CBombaBCS.cpp" />
+		<Unit filename="CBombaBCS.h" />
+		<Unit filename="CFluido.cpp" />
+		<Unit filename="CFluido.h" />
+		<Unit filename="CGnuplot.cpp" />
+		<Unit filename="CGnuplot.h" />
+		<Unit filename="CPerdaCarga.cpp" />
+		<Unit filename="CPerdaCarga.h" />
+		<Unit filename="cheadteorico.cpp" />
+		<Unit filename="cheadteorico.h" />
+		<Unit filename="cperdacargaatritodifusor.cpp" />
+		<Unit filename="cperdacargaatritodifusor.h" />
+		<Unit filename="cperdacargaatritodisco.cpp" />
+		<Unit filename="cperdacargaatritodisco.h" />
+		<Unit filename="cperdacargaatritorotor.cpp" />
+		<Unit filename="cperdacargaatritorotor.h" />
+		<Unit filename="cperdacargachoque.cpp" />
+		<Unit filename="cperdacargachoque.h" />
+		<Unit filename="cperdacargarecirculacao.cpp" />
+		<Unit filename="cperdacargarecirculacao.h" />
+		<Unit filename="csimuladorespperformance.cpp" />
+		<Unit filename="csimuladorespperformance.h" />
+		<Unit filename="main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

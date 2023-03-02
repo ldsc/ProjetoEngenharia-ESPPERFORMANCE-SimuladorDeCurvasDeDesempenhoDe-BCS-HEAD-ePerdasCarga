@@ -1,0 +1,462 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement p
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+Teste
+\begin_inset CommandInset label
+LatexCommand label
+name "chap:Teste"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter - Teste} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Todo projeto de engenharia passa por uma etapa de testes.
+ Neste capítulo apresentamos alguns testes do software desenvolvido.
+ 
+\end_layout
+
+\begin_layout Section
+Teste 1: Recebendo dados do usuário via terminal 
+\end_layout
+
+\begin_layout Standard
+O programa interage com o usuário solicitando que o mesmo escolha entre
+ as opções disponíveis de viscosidade de fluido e rotação do BCS.
+ O teste é realizado rodando o programa via terminal de comando, de forma
+ a verificar se o programa está recebendo a entrada do usuário.
+ Existem quatro combinações a depender das opções ecolhidas pelo usuário
+ e a partir destas combinações são definidos a massa específica do fluido
+ e os fatores de perda de carga por atrito de disco e choque
+\end_layout
+
+\begin_layout Standard
+Na terminal de comando é solicitado ao usuário as opções e a seguir definidos
+ a massa específica do fluido e os fatores e efetuados os devidos cálculos.
+ Veja Figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura1"
+
+\end_inset
+
+, no caso em que o usuário escolhe a opção 1 de viscosidade (1 cP) e a opção
+ 1 de rotação (3500 rpm) 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/Teste_Fig7.1wmf.png
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando: inserção das opções de viscosidade e rotação
+ e definição da massa específica do fluido.
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\noindent
+Teste 2: Cálculos do 
+\shape italic
+head
+\shape default
+ teórico e alturas de elevação 
+\end_layout
+
+\begin_layout Standard
+O programa deve calcular o 
+\shape italic
+head 
+\shape default
+teórico, as perdas de carga a fim de calcular a altura de elevação final.
+ O teste é para verificar se os cálculos estão sendo realizados devidamente,
+ sendo mostrados na tela, no terminal e também se estão sendo gravados em
+ arquivo txt.
+ A validação é feita a partir de conferência dos valores gerados, se estão
+ coerentes com o esperado e se estão sendo salvos no arquivo externo.
+ 
+\end_layout
+
+\begin_layout Standard
+Na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Teste-TelaPrograma-Captura2"
+
+\end_inset
+
+ são mostradas as saídas dos resultados dos cálculos de 
+\shape italic
+head
+\shape default
+ teórico (m) e alturas de elevação (m) dentro da faixa de vazões (bbl/d)
+ determinada para simulações, em terminal para uma combinação de rotação
+ (3500 rpm) e visosidade (1 cP).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/terminal 11.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Tela do programa mostrando os resultados dos cálculos do 
+\shape italic
+head
+\shape default
+ teórico e alturas de elevação, para a combinação de rotação (1800 rpm)
+ e visosidade (1 cP).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Teste-TelaPrograma-Captura2"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:7.3"
+
+\end_inset
+
+ são mostradas as saídas dos resultados dos cálculos de 
+\shape italic
+head
+\shape default
+ teórico (m) e alturas de elevação (m) dentro da faixa de vazões (bbl/d)
+ determinada para simulações, sendo salvas em arquivo de disco (resultados.txt)
+ para para uma combinação de rotação (3500 rpm) e visosidade (1 cP).
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename imagens/txt 11.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Arquivo resultados.txt onde são salvos os resultados dos cálculos do 
+\shape italic
+head
+\shape default
+ teórico e alturas de elevação, para a combinação de rotação (3500 rpm)
+ e visosidade (1 cP).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:7.3"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Teste 3: Plotagem dos gráficos 
+\end_layout
+
+\begin_layout Standard
+O programa deve gerar gráficos dos resultados dos cálculos do 
+\shape italic
+head
+\shape default
+ teórico e altura de elevação.
+ Os gráficos devem apresentar no eixo y os valores de altura de elevação
+ ou 
+\shape italic
+head
+\shape default
+ teórico em metros e no eixo x as vazões em barris por dia.
+ São apresentados as curvas de 
+\shape italic
+head
+\shape default
+ teórico e altura de elevação em cada gráfico.
+ 
+\end_layout
+
+\begin_layout Standard
+Na figura 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "fig:Fig7.4"
+
+\end_inset
+
+ são mostrados os os gráficos plotados das curvas de 
+\shape italic
+head
+\shape default
+ teórico (m) e alturas de elevação (m) dentro da faixa de vazões (bbl/d)
+ determinada para simulações, para uma combinação de rotação (1800 rpm)
+ e visosidade (270 cP).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+a)
+\begin_inset Graphics
+	filename imagens/Teste_Head Teorico x Vazao11.png
+	scale 50
+
+\end_inset
+
+ b)
+\begin_inset Graphics
+	filename imagens/Teste_Altura de Elevacao x Vazao11.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Gráficos das curvas de: a) 
+\shape italic
+head
+\shape default
+ teórico e b) alturas de elevação, para a combinação rotação (1800 rpm)
+ e visosidade (270 cP).
+ 
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Fig7.4"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

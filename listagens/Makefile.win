@@ -1,0 +1,60 @@
+# Project: ESPPerformance
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = cheadteorico.o cperdacargaatritodifusor.o cperdacargaatritodisco.o cperdacargaatritorotor.o cperdacargachoque.o cperdacargarecirculacao.o csimuladorespperformance.o main.o CBombaBCS.o CFluido.o CPerdaCarga.o $(RES)
+LINKOBJ  = cheadteorico.o cperdacargaatritodifusor.o cperdacargaatritodisco.o cperdacargaatritorotor.o cperdacargachoque.o cperdacargarecirculacao.o csimuladorespperformance.o main.o CBombaBCS.o CFluido.o CPerdaCarga.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib"  -fmessage-length=0 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = ESPPerformance.exe
+CXXFLAGS = $(CXXINCS)   -fmessage-length=0
+CFLAGS = $(INCS)   -fmessage-length=0
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before ESPPerformance.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "ESPPerformance.exe" $(LIBS)
+
+cheadteorico.o: cheadteorico.cpp
+	$(CPP) -c cheadteorico.cpp -o cheadteorico.o $(CXXFLAGS)
+
+cperdacargaatritodifusor.o: cperdacargaatritodifusor.cpp
+	$(CPP) -c cperdacargaatritodifusor.cpp -o cperdacargaatritodifusor.o $(CXXFLAGS)
+
+cperdacargaatritodisco.o: cperdacargaatritodisco.cpp
+	$(CPP) -c cperdacargaatritodisco.cpp -o cperdacargaatritodisco.o $(CXXFLAGS)
+
+cperdacargaatritorotor.o: cperdacargaatritorotor.cpp
+	$(CPP) -c cperdacargaatritorotor.cpp -o cperdacargaatritorotor.o $(CXXFLAGS)
+
+cperdacargachoque.o: cperdacargachoque.cpp
+	$(CPP) -c cperdacargachoque.cpp -o cperdacargachoque.o $(CXXFLAGS)
+
+cperdacargarecirculacao.o: cperdacargarecirculacao.cpp
+	$(CPP) -c cperdacargarecirculacao.cpp -o cperdacargarecirculacao.o $(CXXFLAGS)
+
+csimuladorespperformance.o: csimuladorespperformance.cpp
+	$(CPP) -c csimuladorespperformance.cpp -o csimuladorespperformance.o $(CXXFLAGS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+CBombaBCS.o: CBombaBCS.cpp
+	$(CPP) -c CBombaBCS.cpp -o CBombaBCS.o $(CXXFLAGS)
+
+CFluido.o: CFluido.cpp
+	$(CPP) -c CFluido.cpp -o CFluido.o $(CXXFLAGS)
+
+CPerdaCarga.o: CPerdaCarga.cpp
+	$(CPP) -c CPerdaCarga.cpp -o CPerdaCarga.o $(CXXFLAGS)

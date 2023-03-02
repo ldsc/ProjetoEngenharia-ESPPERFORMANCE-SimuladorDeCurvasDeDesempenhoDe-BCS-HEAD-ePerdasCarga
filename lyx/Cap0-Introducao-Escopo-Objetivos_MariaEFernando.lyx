@@ -1,0 +1,450 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass extbook
+\begin_preamble
+\usepackage {graphicx}
+\usepackage {longtable}
+\usepackage {indentfirst}
+\renewenvironment{center}{\par\centering}{\par}
+
+% Comentar linhas abaixo se não estiver usando pacote abntex
+% ou se o pacote ainda não foi instalado.
+% neste caso sugere-se usar citações no padrão apalike (lembra o da anbt).
+%\usepackage[alf ,abnt-etal-cite=2 , abnt-year-extra-label=yes , abnt-etal-list=0]{abntcite}
+%\usepackage {helvet}
+%\renewcommand {\familydefault}{\sfdefault}
+
+% Para uso de listagens de código
+\usepackage{color}
+\definecolor{azulclaro}{rgb}{0.6,1,1}%   rgb color model
+% Informa que vai usar o pacote listings, 
+% disponibilizado em /usr/share/texmf/doc/latex/styles/listings.dvi
+\usepackage{listings}
+\end_preamble
+\use_default_options false
+\master DocumentoMestre-Trabalho-ProgramacaoPratica.lyx
+\maintain_unincluded_children false
+\language brazilian
+\language_package auto
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement h
+\paperfontsize 12
+\spacing onehalf
+\use_hyperref false
+\papersize a4paper
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style apalike
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Índice
+\shortcut idx
+\color #008000
+\end_index
+\paperwidth 210mm
+\paperheight 297mm
+\leftmargin 30mm
+\topmargin 25mm
+\rightmargin 20mm
+\bottommargin 20mm
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle fancy
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+Capa
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+UNIVERSIDADE ESTADUAL DO NORTE FLUMINENSE
+\begin_inset Newline newline
+\end_inset
+
+LABORATÓRIO DE ENGENHARIA E EXPLORAÇÃO DE PETRÓLEO
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+\begin_inset Note Note
+status collapsed
+
+\begin_layout Plain Layout
+O título deve ser o mais claro possível, não deixando dúvidas sobre o assunto
+ em questão.
+ O uso de vírgula ou dois pontos pode deixar o título com mais impacto.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+PROJETO ENGENHARIA
+\begin_inset Newline newline
+\end_inset
+
+DESENVOLVIMENTO DO SOFTWARE 
+\begin_inset Newline newline
+\end_inset
+
+ESPPERFORMANCE - SIMULADOR DE CURVAS DE DESEMPENHO DE BCS: HEAD E PERDAS
+ DE CARGA
+\begin_inset Newline newline
+\end_inset
+
+TRABALHO DA DISCIPLINA PROGRAMAÇÃO PRÁTICA
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+AUTORES
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+Fernando Henrique Moreira Braga Fernandes
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size larger
+Maria Beatriz Lisboa Pereira 
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+Prof.
+ André Duarte Bueno
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 4cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+
+\size large
+MACAÉ - RJ
+\begin_inset Newline newline
+\end_inset
+
+Julho - 2017
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage pagebreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introdução
+\begin_inset CommandInset label
+LatexCommand label
+name "cha:Introdução"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lhead{
+\backslash
+thechapter
+\backslash
+space - Introdução}
+\backslash
+pagenumbering{arabic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+lfoot{Fernando Fernandes e Maria Lisboa} 
+\backslash
+rfoot{
+\backslash
+today}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+No presente projeto de engenharia desenvolve-se o software ESPPerformance,
+ um software aplicado a engenharia de petróleo, mas especificamente à área
+ de elevação artificial.
+ o Software baseia-se principalmente na equação de altura de elevação de
+ bombas centrífugas submersas (BCS) e a partir desta em cada termo componente
+ da mesma.
+ Dessa forma, leva em consideração as parametrizações principais para cada
+ termo da equação, head teórico e perdas de carga, para simular as curvas
+ de perfomance para diferentes condições de operação da BCS.
+ 
+\end_layout
+
+\begin_layout Section
+Escopo do problema
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Escopo-do-Problema"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+O software irá calcular, simular e apresentar resultados para análise em
+ forma gráfica, obtidos a partir da equação da altura de elevação de bombas,
+ e essa por sua vez dos termos componentes.
+ Para realização dos cálculos de cada um dos termos da equação da altura
+ de elevação, serão utilizados modelos presentes na literatura para cada
+ um dos termos.
+ O software contribuirá e auxiliará na previsibilidade do comportamento
+ da bomba e do seu desempenho, os quais são fundamentais para definir condições
+ de funcionamento, o que garante expressivas melhorias na delimitação de
+ parâmetros de operação em fase de projeto e consequente aumento de eficiência
+ na produção de petróleo utilizando BCS.
+ 
+\end_layout
+
+\begin_layout Section
+Objetivos
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Objetivos"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Os objetivos deste projeto de engenharia são:
+\end_layout
+
+\begin_layout Itemize
+Objetivo geral:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Desenvolver um simulador que calcule as curvas de perfomance de operação
+ de BCS utilizado em elevação artificial de petróleo a partir de parametrizações
+ para escoamento de fluidos em bombas centrífugas.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Objetivos específicos:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cálculo do 
+\shape italic
+Head
+\shape default
+ teórico;
+\end_layout
+
+\begin_layout Itemize
+Cálculo da perda de carga por atrito no rotor; 
+\end_layout
+
+\begin_layout Itemize
+Cálculo da perda de carga por atrito de disco;
+\end_layout
+
+\begin_layout Itemize
+Cálculo da perda de carga por atrito no difusor;
+\end_layout
+
+\begin_layout Itemize
+Cálculo da perda de carga por choques;
+\end_layout
+
+\begin_layout Itemize
+Cálculo da perda de carga por recirculação; 
+\end_layout
+
+\begin_layout Itemize
+Cálculo do 
+\shape italic
+Head 
+\shape default
+real da BCS;
+\end_layout
+
+\begin_layout Itemize
+Plotar os resultados dos cálculos para o 
+\shape italic
+Head
+\shape default
+ teórico subtraído das perdas de carga;
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

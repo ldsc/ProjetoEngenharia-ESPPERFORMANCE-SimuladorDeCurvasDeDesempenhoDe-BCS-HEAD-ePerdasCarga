@@ -1,0 +1,130 @@
+# depslib dependency file v1.0
+1499276676 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cbombabcs.cpp
+	"CBombaBCS.h"
+	<iostream>
+	<cmath>
+	<fstream>
+	<vector>
+
+1499216384 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cbombabcs.h
+	<iostream>
+	<vector>
+
+1499214082 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cfluido.cpp
+	"CFluido.h"
+
+1499216384 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cfluido.h
+	<iostream>
+	<vector>
+
+1499214082 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cgnuplot.cpp
+	<fstream>
+	<sstream>
+	<list>
+	<cstdio>
+	<cstdlib>
+	"CGnuplot.h"
+	<io.h>
+	<unistd.h>
+
+1499214082 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cgnuplot.h
+	<iostream>
+	<string>
+	<vector>
+	<stdexcept>
+	<cstdio>
+
+1499214082 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cheadteorico.cpp
+	<vector>
+	<iostream>
+	<cmath>
+	"CHeadTeorico.h"
+	"CBombaBCS.h"
+
+1499216384 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cheadteorico.h
+	<vector>
+	"CBombaBCS.h"
+
+1499214082 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacarga.cpp
+	"CPerdaCarga.h"
+
+1499214082 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacarga.h
+	<vector>
+	"CFluido.h"
+	"CBombaBCS.h"
+
+1499214082 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargaatritodifusor.cpp
+	<vector>
+	<iostream>
+	<cmath>
+	"CPerdaCargaAtritoDifusor.h"
+
+1499216384 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargaatritodifusor.h
+	"CPerdaCarga.h"
+
+1499214082 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargaatritorotor.cpp
+	<vector>
+	<iostream>
+	<cmath>
+	"CPerdaCargaAtritoRotor.h"
+
+1499216384 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargaatritorotor.h
+	"CPerdaCarga.h"
+
+1499214082 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargarecirculacao.cpp
+	<iostream>
+	"CPerdaCargaRecirculacao.h"
+
+1499216384 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargarecirculacao.h
+	<vector>
+	"CPerdaCarga.h"
+
+1499352580 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\csimuladorespperformance.cpp
+	<iostream>
+	<vector>
+	<iomanip>
+	<fstream>
+	<cmath>
+	"CSimuladorESPPerformance.h"
+
+1499217588 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\csimuladorespperformance.h
+	<vector>
+	<iomanip>
+	<fstream>
+	<iostream>
+	"CFluido.h"
+	"CBombaBCS.h"
+	"CHeadTeorico.h"
+	"CPerdaCargaAtritoDifusor.h"
+	"CPerdaCargaAtritoDisco.h"
+	"CPerdaCargaAtritoRotor.h"
+	"CPerdaCargaChoque.h"
+	"CPerdaCargaRecirculacao.h"
+	"CGnuplot.h"
+
+1499279442 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargaatritodisco.h
+	<map>
+	"CPerdaCarga.h"
+
+1499279442 c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargachoque.h
+	"CPerdaCarga.h"
+	<map>
+
+1499352048 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\main.cpp
+	<iostream>
+	"CSimuladorESPPerformance.h"
+
+1499349710 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargaatritodisco.cpp
+	<vector>
+	<iostream>
+	<cmath>
+	<fstream>
+	"CPerdaCargaAtritoDisco.h"
+
+1499349710 source:c:\users\maria beatriz lisboa\desktop\programação prática\projeto de engenharia\listagens\cperdacargachoque.cpp
+	<vector>
+	<iostream>
+	<cmath>
+	<fstream>
+	"CPerdaCargaChoque.h"
+

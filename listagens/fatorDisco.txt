@@ -1,0 +1,3 @@
+Viscosidade (cP)    FatorEmpiricoAtritoDisco 
+1                   300
+270                 200

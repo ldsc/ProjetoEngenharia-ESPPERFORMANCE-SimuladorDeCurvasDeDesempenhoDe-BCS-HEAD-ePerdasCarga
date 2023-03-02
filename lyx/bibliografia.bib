@@ -1,0 +1,503 @@
+% Encoding: UTF-8
+%--------------------------------------------------------------------
+% NAME: andre.bib (18/02/2002)
+%
+% O que ? um arquivo BiBTeX?
+% ? um arquivo em modo texto (tipo ASCII), que inclui refer?ncias completas para os
+% trabalhos (artigos/relat?rios/teses/etc) a serem citados em sua monografia/disserta??o/tese.
+%
+% Porque usar?
+% A vantagem de usar uma base de dados com as referencias bibliogr?ficas
+% (como este arquivo), ? que seu editor cient?fico (ex: o LyX) 
+% poder? gerar as cita??es nos mais variados formatos acad?micos.
+%
+% Como fa?o para usar?
+% No caso do LyX(2.0.2), voc? insere a base bibliogr?fica usando:
+% Lyx->Inserir->Listas e Indices->Bibliografia BiBTeX
+%
+% INSTRU??ES:
+% 0- Use o find (crtl-s ##)  para localizar as diferentes se??es desta base de dados
+%    para pr?ximo ?tem basta digitar ctrl-s novamente (no emacs!).
+% 1-Use o emacs ou um editor simples para editar este arquivo
+%   Pode acentuar normalmente, usando ??,,; 
+
+% 2-Use o emacs (menu BIBTEX) para verificar a consistencia das entradas
+% Se tiver alguma inconsist?ncia o emacs deve informar.
+
+% 3-Use o programa bibtool para gerar sa?da formatada.
+% ex: bibtool bibliografia
+
+% 4-Use as entradas normalmente no Lyx ou em outro editor tex.
+
+% 5-Se estiver no GNU/Linux, verifique se o arquivo .bib esta no formato do Unix. 
+% Use o programa dos2unix para converter arquivos do dos/windows para o GNU/Linux.
+% Use o programa unix2dos para converter arquivos do GNU/Linux para dos/windows.
+
+%   Para eliminar caracteris iso, e deixar somente ASCII, use o bibtool.
+%     bibtool -r iso2tex -i iso.bib -o ascii.bib
+
+%--------------------------------------------------------------------
+%--------------------------------------------------------------------
+% Para facilitar a localizacao das chaves, defina um padrao, como exemplo:
+% adb    - artigos pessoais
+% imgan  - artigos de an?lise de imagem
+% pm     - artigos sobre meios porosos
+% rec    - artigos reconstru??o
+% perc   - artigos percola??o 
+% perm   - artigos permeabilidade
+% me     - artigos multi-escala
+% prob   - artigos probabilidade, processos estoc?sticos
+% microt - artigos micro tomografia
+% numan  - artigos sobre m?todos num?ricos 
+% math   - artigos matem?ticos
+% sl     - software livre
+% prog   - artigos/manuais programa??o
+% hst    - artigos histerese
+% prog-cpp
+% prog-HOWTO
+% prog-linux
+% prog-uml
+% prog-paralela
+% prog-xml
+% prog-interface
+%--------------------------------------------------------------------
+
+% Exemplos:
+%  author =       "W. W. Howells",
+%  author =       "G. B. Johnson and W. W. Howells and A. N. Other",
+%  author =       "Firstname Jones and Firstname Norman and Firstname Hazel and Firstname Robinson",
+%  author =       "sobrenome, nome",
+% Para preservar, isto ?, manter um nome use {Nome}
+
+% Defini??o de strings
+
+%--------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------
+% ## MESTRADO,  DOUTORADO, CONCURSOS  
+%--------------------------------------------------------------------
+@PhdThesis{AMARAL-2007,
+  author = 	 {AMARAL, G. D. L. do},
+  title = 	 {Modelagem do Escoamento Monof�sico em Bomba Centr�fuga Submersa Operando com Fluidos Viscosos},
+  school = 	 {Faculdade de Engenharia Mec�nica, Universidade Estadual de Campinas},
+  year = 	 {2007},
+  month = 	 {},
+  key = 	 {}
+}
+@PhdThesis{ESTEVAM-2002,
+  author = 	 {ESTEVAM, V.},
+  title = 	 {Uma an�lise fenomenol�gica da opera��o de bomba centr�fuga com escoamento bif�sico},
+  school = 	 {Faculdade de Engenharia Mec�nica, Universidade Estadual de Campinas},
+  year = 	 {2002},
+  month = 	 {},
+  key = 	 {}
+}
+@PhdThesis{VAN,
+  author = 	 {VAN ESCH, B. P. M.},
+  title = 	 {Simulation of three-dimensional unsteady flow in hydraulic pumps},
+  school = 	 {University of Twente},
+  year = 	 {1997},
+  month = 	 {},
+  key = 	 {}
+}
+
+
+
+@mastersthesis{SEGALA,
+  author	= {SEGALA, W.},
+  title		= {Simula��o Num�rica Do Escoamento Monof�sico no Primeiro Est�gio de uma Bomba Centr�fuga de Duplo Est�gio},
+  school	= {Programa de P�s-Gradua��o em Engenharia Me�nica e de Materiais, Universidade Tecnol�gica Federal do Paran�},
+  year		= {2010},
+  type		= {Disserta��o de Mestrado},
+  address	= {Curitiba},
+  month		= {},
+  note		= {},
+  key		= {}
+}
+@mastersthesis{SIRINO,
+  author	= {SIRINO, T.},
+  title		= {Estudo Num�rico da Influ�ncia da Viscosidade no Desempenho de uma Bomba Centr�fuga Submersa},
+  school	= {Programa de P�s-Gradua��o em Engenharia Mec�nica e de Materiais, Universidade Tecnol�gica Federal do Paran�},
+  year		= {2013},
+  type		= {Disserta��o de Mestrado},
+  address	= {Curitiba},
+  month		= {},
+  note		= {},
+  key		= {}
+}
+@mastersthesis{SOLANO, 
+  author	= {SOLANO, E. A.},
+  title		= {Viscous Effects on the Performance of Electro Submersible Pumps (ESPs)},
+  school	= {The Graduate School, University of Tulsa},
+  year		= {2009},
+  type		= {Thesis (Master of Science in Petroleum Engineering)},
+  address	= {Tulsa, Oklahoma},
+  month		= {},
+  note		= {},
+  key		= {}
+}
+@mastersthesis{VIEIRA-2014,
+  author	= {VIEIRA, T. S},
+  title		= {An�lise das perdas de carga no escoamento monof�sico em rotor de bomba centr�fuga submersa utilizada na eleva��o de petr�leo},
+  school	= {Laborat�rio de Engenharia e Explora��o de Petr�leo, Universidade Estadual do Norte Fluminense},
+  year		= {2014},
+  type		= {Disserta��o (mestrado)},
+  address	= {Maca�},
+  month		= {},
+  note		= {},
+  key		= {}
+}
+@mastersthesis{VARON,
+  author	= {VARON, M. P.},
+  title		= {ESTUDO DE UMA BOMBA CENTR�FUGA SUBMERSA (BCS) COMO MEDIDOR DE VAZ�O},
+  school	= {Faculdade de Engenharia Mec�nica, Universidade Estadual de Campinas},
+  year		= {2013},
+  type		= {Disserta��o (mestrado)},
+  address	= {Campinas},
+  month		= {},
+  note		= {},
+  key		= {}
+}
+
+
+
+
+
+% Monografia concurso
+
+%--------------------------------------------------------------------
+% ## Artigos em revistas 
+%--------------------------------------------------------------------
+@article{BOLIN,
+  author	= {BOLIN},
+  title		= {Using The Calibrated-Tested Pumping Instrument (Esp) For ContinuousFluid Measurement When Producing Heavy Oil Wells},
+  journal	= {SPE paper},
+  year		= {2007},
+  Address	= {Texas},
+  pages		= {8p},
+ month		= {}
+}
+@article{GuLICH,
+  author	= {GULICH, J.F.},
+  title		= {Pumping Highly Viscous Fluids With Centrifugal Pump},
+  journal	= {World Pumps},
+  year		= {1999},
+  Address	= {},
+  pages		= {395/6},
+ month		= {Aug/Sep}
+}
+@article{HYDRAULIC,
+  author	= {HYDRAULIC INSTITUTE},
+  title		= {Hydraulic Institute Standards for Centrifugal, Rotary & Reciprocating Pumps},
+  journal	= {HI 14th edition},
+  year		= {1983},
+  Address	= {},
+  pages		= {},
+ month		= {}
+}
+@article{ITO,   
+author	= {ITO, H.},
+  title		= {Friction Factors for Turbulent Flow in Curved Pipes},
+  journal	= {Journal Basic Engineering, Transaction of the ASME},
+  year		= {1959},
+  Address	= {},
+  pages		= {},
+ month		= {}
+}
+@article{Nanbu,
+  author	= {ITO, H.; Nanbu, K.},
+  title		= {Flow in Rotating Straight Pipes of Circular Cross Section},
+  journal	= {Journal Basic Engineering, Transaction of the ASME},
+  year		= {1971},
+  Address	= {},
+  pages		= {},
+ month		= {}
+}
+@article{JONES,
+  author	= {JONES, O. C.},
+  title		= {An Improvement in the Calculation of Turbulent Friction in Rectangular Ducts},
+  journal	= {Journal Fluids Engineering, Vol 98},
+  year		= {1976},
+  Address	= {},
+  pages		= {173-180.},
+ month		= {}
+}
+@article{SACHDEVA, 
+  author	= {SACHDEVA, R. et al},
+  title		= {Performance of Electric Submersible Pumps in Gassy Wells},
+  journal	= {SPE Production & Facilities },
+  year		= {1988},
+  Address	= {},
+  pages		= {},
+ month		= {}
+}
+@article{SHAH,
+  author	= {SHAH, R.K.},
+  title		= {A Correlation for Laminar Hydrodynamics Entry Length Solutions for Circular and Noncircular Ducts},
+  journal	= {Journal Fluids Engineering, Vol. 100  },
+  year		= {1978},
+  Address	= {},
+  pages		= {177-179},
+ month		= {}
+}
+@article{WIESNER, 
+  author	= {WIESNER, F. J.},
+  title		= {A Review of Slip Factors off Centrifugal Impeller},
+  journal	= {Journal of Engineering for Power, Transaction of the ASME },
+  year		= {1967},
+  Address	= {},
+  pages		= {558?572},
+ month		= {Outubro}
+}
+@article{YOON, 
+  author	= {YOON, E. S. et al},
+  title		= {Performance prediction of mixed-flow
+pumps},
+  journal	= {Proc Instn Mech Engrs, Part A. J Power Energy},
+  year		= {1998},
+  Address	= {},
+  pages		= {109-115},
+ month		= {}
+}
+
+@article{EUSTACE,
+  author	= {EUSTACE, D.; Coltharp},
+  title		= {Subsurface Electrical Centrifugal Pumps Performance of Electric Submersible Pumps in Gassy Wells},
+  journal	= {SPE Production & Facilities (1988).},
+  year		= {1988},
+  Address	= {},
+  pages		= {},
+ month		= {}
+}
+
+@article{VIEIRA-2015,
+  author	= {VIEIRA, T. S. et al},
+  title		= {Analytical study of pressure losses and fluid viscosity effects on pump performance during monophase flow inside an ESP stage},
+  journal	= {Journal of Petroleum Science and Engineering},
+  year		= {2015},
+  Address	= {Maca�},
+  pages		= {},
+ month		= {}
+}
+
+
+%--------------------------------------------------------------------
+% ## Artigos em congressos 
+%--------------------------------------------------------------------
+@inproceedings{BING,
+  author	= {BING, H. et al},
+  title		= {Prediction method of impeller performance and analysis of loss mechanism for mixed-flow pump},
+  publisher	= {Sci China Tech Sci},
+  address	= {},
+  year		= {2012}
+}
+@inproceedings{CHURCHILL, 
+  author	= {CHURCHILL, S. W.},
+  title		= {Friction-Fator Equation Spans All Fluid -Flow Regimes},
+  publisher	= {Chemical Engineering},
+  address	= {},
+  year		= {1977}
+}
+@inproceedings{SUN-2002,
+  author	= {SUN, D. et al.},
+  title		= {Single-Phase Model for ESP's Performance},
+  publisher	= {TUALP Annual Advisory Board Meeting},
+  address	= {Tulsa/Oklahoma },
+  year		= {2002}
+}
+@inproceedings{THIN, 
+  author	= {THIN, K. C. et al},
+  title		= {Design and Performance Analysis of Centrifugal Pump},
+  publisher	= {World Academy of Science, Engineering and Technology. },
+  address	= {China},
+  year		= {2008}
+}
+
+
+
+%--------------------------------------------------------------------
+% ## Manuais 
+%--------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------
+% ## N?o publicado 
+%--------------------------------------------------------------------
+@unpublished{KRUYT,
+  author	= {KRUYT, N. P.},
+  title		= {Turbomachines II - Lecture Notes},
+  year		= {1999-2003},
+  key		= {},
+  note          = {Turbomachinery Laboratory.
+Department of Mechanical Engineering University of Twente, 72 p. Netherlands}
+}
+
+%--------------------------------------------------------------------
+% ## Relat?rio Andre
+%--------------------------------------------------------------------
+
+%--------------------------------------------------------------------
+% Livro 
+%--------------------------------------------------------------------
+@Book{FOX,
+  author = 	 {FOX, R.W.; McDonald, A.T},
+  title = 	 {Introdu��o � Mec�nica dos Fluidos},
+  publisher = 	 {Livros T�cnicos e Cient�ficos Editora },
+  year = 	 {2001},
+  address = 	 {Rio de Janeiro}
+}
+@Book{KENNETH,
+  author = 	 {KENNETH, J. },
+  title = 	 {Bombas: Selecci�n, Uso Y Mantenimiento},
+  publisher = 	 {Mcgraw-hill},
+  year = 	 {1998},
+  address = 	 {Mexico}
+}
+@Book{NELIK, 
+  author = 	 {NELIK, L.},
+  title = 	 {Centrifugal and Rotary Pumps: Fundamentals with Applications},
+  publisher = 	 {CRC Press},
+  year = 	 {1999},
+  address = 	 {}
+}
+@Book{PFLEIDERER, 
+  author = 	 {PFLEIDERER, C.},
+  title = 	 {M�quinas de Fluxo},
+  publisher = 	 {Livros T�cnicos e  cient�ficos Editora},
+  year = 	 {1972},
+  address = 	 {Rio de Janeiro}
+}
+@Book{STEPANOFF, 
+  author = 	 {STEPANOFF, A. J.},
+  title = 	 {Centrifugal and Axial Flow Pumps Theory, Design and Application},
+  publisher = 	 {Second edition. John Wiley & Sons},
+  year = 	 {1957},
+  address = 	 {Nova Iorque}
+}
+@Book{TAKACS,
+  author = 	 {TAKACS, G.},
+  title = 	 {Electrical submersible pumps manual: design, operations and maitenance},
+  publisher = 	 {Gulf Professional Publishing},
+  year = 	 {2009},
+  address = 	 {}
+}
+@Book{THOMAS,
+  author = 	 {THOMAS, J. E. et al},
+  title = 	 {Fundamentos da engenharia de petr�leo},
+  publisher = 	 {Segunda edi��o. Editora Interci�ncia},
+  year = 	 {2001},
+  address = 	 { Rio de Janeiro}
+}
+@Book{TUZSON,
+  author = 	 {TUZSON, J.},
+  title = 	 {Centrifugal Pump Design},
+  publisher = 	 {John Wiley and Sons. Inc. },
+  year = 	 {2000},
+  address = 	 { USA}
+}
+@Book{MUNSON,
+  author = 	 {MUNSON, B. R. et al},
+  title = 	 {Fundamentos da Mec�nica dos Fluidos},
+  publisher = 	 {Editora Edgard Blucher},
+  year = 	 {2004},
+  address = 	 { S�o Paulo,}
+}
+@Book{CENGEL,
+  author = 	 {CENGEL, Y. A.; CIMBALA, J. M},
+  title = 	 {Mec�nica dos Fluidos: Fundamentos e
+Aplica��es},
+  publisher = 	 {Editora McGraw-Hill},
+  year = 	 {2007},
+  address = 	 { S�o Paulo,}
+}
+@Book{POTTER,
+  author = 	 {POTTER, M. C.; Wiggert, D. C.},
+  title = 	 {Mec�nica dos Fluidos},
+  publisher = 	 {Editora Pioneira Thomson
+Learning},
+  year = 	 {2004},
+  address = 	 { S�o Paulo,}
+}
+
+
+%--------------------------------------------------------------------
+% ## Teses
+%--------------------------------------------------------------------
+
+
+
+%--------------------------------------------------------------------
+% Anais de Congressos
+%--------------------------------------------------------------------
+
+@InProceedings{LADOUANI, 
+  author = 	 {LADOUANI, A.; Nemdili, A.},
+  title = 	 {Influence of Reynolds number on net positive suction head of centrifugal pumps in relation to disc friction losses},
+  pages = 	 {173-182},
+  year = 	 {2009},
+  publisher = 	 {Forsch Ingenieurwes },
+  volume = 	 {},
+}
+@InProceedings{PRADO,
+  author = 	 {PRADO, M. G.},
+  title = 	 {Nodal Analysis and Artificial Lift Concepts},
+  pages = 	 {},
+  year = 	 {2008},
+  publisher = 	 {SPE },
+  volume = 	 {},
+}
+@InProceedings{CONRAD,
+  author = 	 {CONRAD, O. et al},
+  title = 	 {The calculation of performance maps for
+centrifugal compressors with vane-island diffusers},
+  pages = 	 {135-147},
+  year = 	 {1980},
+  publisher = 	 {ASME 25th Annual
+International Gas Turbine Conference and 22nd Annual Fluids Engineering
+150
+Conference on Performance Prediction of Centrifugal Pumps and Compressors },
+  volume = 	 {25},
+}
+@InProceedings{SUN-2001,
+  author = 	 {SUN, D. et al},
+  title = 	 {Single-Phase Model for Radial ESP's
+Performance},
+  pages = 	 {},
+  year = 	 {2001},
+  publisher = 	 {TUALP Annual Advisory Board Meeting, Houston/Texas},
+  volume = 	 {},
+}
+
+
+
+%--------------------------------------------------------------------
+% Artigos
+%--------------------------------------------------------------------
+
+
+%--------------------------------------------------------------------
+% ## Assunto dos artigos abaixo...
+%--------------------------------------------------------------------
+
+}
+
+
+%--------------------------------------------------------------------
+% ## tex/latex
+%--------------------------------------------------------------------
+
+
+
+%--------------------------------------------------------------------
+% ## Referencia online
+%--------------------------------------------------------------------
+
+@WWW{umbrello,
+  author = {Project Umbrello},
+  title  = {Umbrello Project},
+  year   = {2017},
+  url    = {https://umbrello.kde.org/},
+}
+
+@Comment{jabref-meta: databaseType:biblatex;}
